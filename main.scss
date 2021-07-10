@@ -5,10 +5,113 @@ $primary2: hsl(71, 73%, 54%);
 $neutral1: hsl(204, 43%, 93%);
 $neutral2: hsl(218, 22%, 67%);
 
-html {
-  font-family: "Karla", sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  font-size: 16px;
+html {
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+
+  body {
+    height: 100%;
+    background: $neutral1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    margin: auto;
+    max-width: 40rem;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 2px 16px 1px rgba(0, 0, 0, 0.15);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h1 {
+      font-size: 1.5rem;
+      color: $primary1;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: $neutral1;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+      height: 15rem;
+    }
+
+    #section1 {
+      background: white;
+      grid-area: 1/ 1/ 2/ 3;
+      h2 {
+        color: $primary2;
+      }
+      p {
+        color: $neutral2;
+      }
+    }
+
+    #section2 {
+      background: $primary1;
+      p {
+        color: white;
+      }
+      .price-month {
+        display: flex;
+        align-items: center;
+
+        h1 {
+          font-size: 2rem;
+          color: white;
+          margin-bottom: 0;
+        }
+
+        p {
+          color: $neutral1;
+        }
+      }
+
+      .button {
+        text-decoration: none;
+        color: white;
+        background: $primary2;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 3px 10px 16px 1px rgba(0, 0, 0, 0.17);
+      }
+    }
+
+    #section3 {
+      background: lighten($primary1, 5%);
+      p {
+        color: white;
+      }
+    }
+
+    #section2,
+    #section3 {
+      h1 {
+        color: $neutral1;
+      }
+      h2 {
+        color: white;
+      }
+    }
+  }
 }

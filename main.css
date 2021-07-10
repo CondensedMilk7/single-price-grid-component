@@ -1,10 +1,101 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
-html {
-  font-family: "Karla", sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  font-size: 16px;
+html {
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+}
+html body {
+  height: 100%;
+  background: #e5eff5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html .card {
+  margin: auto;
+  max-width: 40rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 2px 16px 1px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+html .card h1 {
+  font-size: 1.5rem;
+  color: #2ab2af;
+  margin-bottom: 1rem;
+}
+html .card h2 {
+  font-size: 1.2rem;
+  color: #e5eff5;
+  margin-bottom: 1rem;
+}
+html .card section {
+  padding: 2rem;
+  height: 15rem;
+}
+html .card #section1 {
+  background: white;
+  grid-area: 1/1/2/3;
+}
+html .card #section1 h2 {
+  color: #c0df34;
+}
+html .card #section1 p {
+  color: #98a6bd;
+}
+html .card #section2 {
+  background: #2ab2af;
+}
+html .card #section2 p {
+  color: white;
+}
+html .card #section2 .price-month {
+  display: flex;
+  align-items: center;
+}
+html .card #section2 .price-month h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0;
+}
+html .card #section2 .price-month p {
+  color: #e5eff5;
+}
+html .card #section2 .button {
+  text-decoration: none;
+  color: white;
+  background: #c0df34;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 3px 10px 16px 1px rgba(0, 0, 0, 0.17);
+}
+html .card #section3 {
+  background: #2fc6c4;
+}
+html .card #section3 p {
+  color: white;
+}
+html .card #section2 h1,
+html .card #section3 h1 {
+  color: #e5eff5;
+}
+html .card #section2 h2,
+html .card #section3 h2 {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
