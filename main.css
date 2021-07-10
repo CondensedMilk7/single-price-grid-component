@@ -36,6 +36,9 @@ html .card h2 {
   color: #e5eff5;
   margin-bottom: 1rem;
 }
+html .card p {
+  line-height: 1.6rem;
+}
 html .card section {
   padding: 2rem;
   height: 15rem;
