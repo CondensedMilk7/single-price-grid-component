@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+$primary1: hsl(179, 62%, 43%);
+$primary2: hsl(71, 73%, 54%);
+$neutral1: hsl(204, 43%, 93%);
+$neutral2: hsl(218, 22%, 67%);
+
+html {
+  font-family: "Karla", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
