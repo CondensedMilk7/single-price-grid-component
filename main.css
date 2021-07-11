@@ -19,12 +19,18 @@ html body {
 }
 html .card {
   margin: auto;
-  max-width: 40rem;
+  max-width: 38rem;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0px 2px 16px 1px rgba(0, 0, 0, 0.15);
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 40rem) {
+  html .card {
+    display: block;
+    margin: 1.5rem;
+  }
 }
 html .card h1 {
   font-size: 1.5rem;
@@ -41,7 +47,6 @@ html .card p {
 }
 html .card section {
   padding: 2rem;
-  height: 15rem;
 }
 html .card #section1 {
   background: white;
@@ -70,6 +75,10 @@ html .card #section2 .price-month h1 {
 }
 html .card #section2 .price-month p {
   color: #e5eff5;
+  margin-top: 3rem;
+}
+html .card #section2 .price-month .per-month {
+  margin: 0 0 0 1rem;
 }
 html .card #section2 .button {
   text-decoration: none;
@@ -88,6 +97,7 @@ html .card #section2 .button {
 }
 html .card #section3 {
   background: #2fc6c4;
+  padding-right: 4rem;
 }
 html .card #section3 p {
   color: white;

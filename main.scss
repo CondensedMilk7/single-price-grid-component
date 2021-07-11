@@ -25,13 +25,18 @@ html {
   }
   .card {
     margin: auto;
-    max-width: 40rem;
+    max-width: 38rem;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0px 2px 16px 1px rgba(0, 0, 0, 0.15);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 40rem) {
+      display: block;
+      margin: 1.5rem;
+    }
 
     h1 {
       font-size: 1.5rem;
@@ -49,7 +54,6 @@ html {
     }
     section {
       padding: 2rem;
-      height: 15rem;
     }
 
     #section1 {
@@ -80,6 +84,11 @@ html {
 
         p {
           color: $neutral1;
+          margin-top: 3rem;
+        }
+
+        .per-month {
+          margin: 0 0 0 1rem;
         }
       }
 
@@ -102,6 +111,7 @@ html {
 
     #section3 {
       background: lighten($primary1, 5%);
+      padding-right: 4rem;
       p {
         color: white;
       }
