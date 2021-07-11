@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/CondensedMilk7/single-price-grid-component)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://practical-hopper-e97e35.netlify.app)
 
 ## My process
 
