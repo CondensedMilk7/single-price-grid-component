@@ -25,7 +25,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshots/scr-dsk.png)
-![](./screenshots/scr-mobl.png)
 
 ### Links
 
