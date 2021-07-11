@@ -7,10 +7,9 @@
 
 html {
   font-family: "Karla", sans-serif;
-  height: 100vh;
 }
 html body {
-  height: 100%;
+  min-height: 100vh;
   background: #e5eff5;
   display: flex;
   flex-direction: column;
@@ -109,6 +108,9 @@ html .card #section3 h1 {
 html .card #section2 h2,
 html .card #section3 h2 {
   color: white;
+}
+html footer {
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
